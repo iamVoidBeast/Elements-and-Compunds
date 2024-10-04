@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemical Elements and Compounds</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #121212; /* Dark background */
+            color: #fff; /* White text */
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            flex-direction: column; /* Stack elements vertically */
+        }
+
+        .welcome-container {
+            max-width: 500px; /* Limit width */
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #1DB954, #191414); /* Spotify-themed gradient */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            background-color: #1DB954; /* Spotify green */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%; /* Full width button */
+            margin-top: 20px; /* Spacing above button */
+        }
+
+        button:hover {
+            background-color: #1ed760; /* Lighter green on hover */
+        }
+
+        .gif {
+            margin: 20px 0; /* Spacing above and below the GIF */
+            width: 100%; /* Full width for responsive design */
+            max-width: 400px; /* Maximum width for the GIF */
+            border-radius: 10px; /* Rounded corners */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <h1>Chemical Elements and Compounds</h1>
+        <img src="./assets/atomicstructure.png" alt="Welcome GIF" class="gif"> <!-- Add the path to your GIF here -->
+        <div class="atom-container">
+            <div class="nucleus"></div>
+            <div class="electron-orbit orbit1">
+                <div class="electron"></div>
+            </div>
+            <div class="electron-orbit orbit2">
+                <div class="electron"></div>
+            </div>
+            <div class="electron-orbit orbit3">
+                <div class="electron"></div>
+            </div>
+        </div>
+        <button id="goButton">Go to Elements and Compounds List</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('goButton').addEventListener('click', function() {
+                window.location.href = "./elements.html";
+            });
+        });
+    </script>
+</body>
+</html>
